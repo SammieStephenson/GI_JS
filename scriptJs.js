@@ -1,8 +1,10 @@
+//Very Easy 
 let x = 6;
 let y = 2;
 // var console;
 // console.log(x - y === 4);
 
+//Easy
 const firstName = "Sammie"
 const secondName = "Tristyn"
 console.log(firstName, secondName);
@@ -20,6 +22,7 @@ if (firstNameLength >= secondNameLength) {
     console.log("The name " + secondName + " is longer than " + firstName + " by " + difference + ".")
 }
 
+//Medium
 let toneOfText = prompt("Hey! What's up? ");
 if (toneOfText === toneOfText.toUpperCase()) {
     console.log('WHY ARE WE SHOUTING?!')
@@ -28,10 +31,12 @@ if (toneOfText === toneOfText.toUpperCase()) {
 } else {
     console.log("Now we're talking!")
 }
-let num1 = 7
-let num2 = 8
+
+//Hard
+let num1 = Number(prompt('Pick a Number'))
+let num2 = Number(prompt('Pick another Number'))
 const add = function (num1, num2) {
-    return num1 + num2
+    return (num1 + num2)
 }
 console.log(add(num1, num2))
 
@@ -49,3 +54,17 @@ const divide = function (num1, num2) {
     return num1 / num2
 }
 console.log(divide(num1, num2))
+
+//Very Hard 
+
+const entry2 = prompt('Pick an Opperation + - * OR /')
+
+if (entry2 == '+') {
+    alert(`${num1} + ${num2} = ${add(num1, num2)}`)
+} else if (entry2 == "-") {
+    alert(`${num1} - ${num2} = ${subtract(num1, num2)}`)
+} else if (entry2 == "*") {
+    alert(`${num1} * ${num2} = ${multiply(num1, num2)}`)
+} else if (entry2 == "/") {
+    alert(`${num1} / ${num2} = ${divide(num1, num2)}`)
+}
